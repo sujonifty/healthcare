@@ -188,6 +188,7 @@ button {
     margin: 4rem 0rem 1rem 0rem;
 }
 
+/* our mission section  */
 .our-mission {
     position: relative;
     display: flex;
@@ -238,7 +239,7 @@ button {
 
 }
 
-.mission-card h3 {
+.mission-card h2 {
     color: #FFF;
     font-style: normal;
     font-weight: 500;
@@ -256,6 +257,8 @@ button {
     font-style: normal;
     font-weight: 400;
 }
+
+/* service section  */
 .service {
     background: #FFFFF5;
     display: flex;
@@ -265,11 +268,13 @@ button {
     margin: 2rem auto;
 
 }
-.service div{
+
+.service div {
     /* border: 20px solid navy; */
     width: 50%;
 }
-.service-img{
+
+.service-img {
     width: 100%;
     object-fit: cover;
     border-radius: 1rem;
@@ -285,10 +290,11 @@ button {
     background: #FFFFF5;
 }
 
-.service-content  {
+.service-content {
     margin: 2rem auto;
     width: 50%;
 }
+
 .service-content p {
     background: #FFFFF5;
 }
@@ -305,7 +311,166 @@ button {
     background: #FBFBFB;
 }
 
+/* Testimonial section  */
+.review-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.testimonial-content h2 {
+    color: var(--Text, #020043);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+}
+
+.testimonial-content button {
+
+    display: inline-flex;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    border: 1px solid var(--text-70, #4D4C7B);
+    background: #FBFBFB;
+}
+
+.card {
+    border-radius: 16px;
+    background: var(--Secondary-Color, #FFFFF5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin: 0 0 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin: 0 0 15px;
+    color: #333;
+}
+
+.user-rating p {
+    color: var(--Text, #020043);
+    font-size: 12px;
+    font-style: normal;
+    line-height: 18px;
+}
+
+.user-name {
+
+    font-weight: 600;
+}
+
+.user {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 2rem;
+}
+
+.star-rating {
+    display: flex;
+}
+
+.star {
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star:hover,
+.star:hover~.star {
+    color: #ff9800;
+}
+
+.star.selected,
+.star.selected~.star {
+    color: #ff9800;
+}
+
+/* FAQ section  */
+.faq-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* max-width: 600px; */
+    width: 100%;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq {
+    border-top: 1px solid #ddd;
+}
+
+.faq-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-arrow {
+    display: inline;
+    position: absolute;
+    left: 98%;
+    padding-right: 1rem;
+}
+
+.question {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0.25rem;
+    background: var(--Secondary-Color, #FFFFF5);
+}
+
+.question h3 {
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.answer.active {
+    max-height: 200px;
+}
 
 @media (max-width: 768px) {
     .navbar .menu {
@@ -376,15 +541,19 @@ button {
         grid-column: 1/span 1;
         grid-row: 6/span 1;
     }
-    .container div{
+
+    .container div {
         width: 80%;
         margin: 0rem auto;
     }
+
+    /* our mission section  */
     .our-mission {
         display: flex;
         flex-direction: column;
-       
+
     }
+
     .mission-card {
         width: 100%;
         margin: 0rem auto;
@@ -395,11 +564,36 @@ button {
         left: 0;
         bottom: 0;
         right: 0;
-    
+
     }
-    .mission-img{
+
+    .mission-img {
         width: 100%;
         margin: 0rem auto;
+    }
+
+    .service {
+        flex-direction: column-reverse;
+
+    }
+
+    .service div {
+        width: 100%;
+
+    }
+
+    .service-img {
+        width: 100%;
+
+    }
+
+    /* Testimonial section  */
+    .review-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
     }
 }
 
