@@ -50,6 +50,7 @@
     display: none;
     flex-direction: column;
     cursor: pointer;
+    background-color: #343268;
 }
 
 .navbar .hamburger div {
@@ -102,6 +103,17 @@ button {
     }
     .appoint{
         display: none;
+    }
+    button {
+        padding: 0.05rem;
+        width: 6rem;
+
+    }
+    .arrow {
+        display: none;
+    }
+    .banner img{
+        border-radius: 1rem;
     }
 }
 
