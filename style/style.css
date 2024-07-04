@@ -2,7 +2,7 @@
     font-family: 'Mulish', sans-serif;
     margin: 0rem;
     padding: 0rem;
-    background-color: #F5FCFF;
+    /* background-color: #F5FCFF; */
     /* max-width: 95%;
     margin: 0px auto; */
 }
@@ -196,6 +196,24 @@ button {
     gap: 1rem;
 }
 
+.mission-content h2 {
+    color: var(--Text, #020043);
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+}
+
+.mission-content button {
+    border-radius: 25px;
+    border: 1px solid var(--text-80, #343268);
+    background: #FFFFF5;
+}
+
+
+
+
 .mission-card {
     position: absolute;
     top: 60%;
@@ -227,12 +245,67 @@ button {
     line-height: 24px;
     background: var(--text-80, #343268);
 
+
 }
 
 .content {
     width: 80%;
     margin: 1rem 0rem;
+    color: var(--text-70, #4D4C7B);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
 }
+.service {
+    background: #FFFFF5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem auto;
+
+}
+.service div{
+    /* border: 20px solid navy; */
+    width: 50%;
+}
+.service-img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+
+}
+
+.service-content h2 {
+    color: var(--Text, #020043);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    background: #FFFFF5;
+}
+
+.service-content  {
+    margin: 2rem auto;
+    width: 50%;
+}
+.service-content p {
+    background: #FFFFF5;
+}
+
+.service-content button {
+
+    display: inline-flex;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 32px;
+    border: 1px solid var(--text-70, #4D4C7B);
+    background: #FBFBFB;
+}
+
+
 
 @media (max-width: 768px) {
     .navbar .menu {
@@ -302,6 +375,31 @@ button {
     .sub-container-6 {
         grid-column: 1/span 1;
         grid-row: 6/span 1;
+    }
+    .container div{
+        width: 80%;
+        margin: 0rem auto;
+    }
+    .our-mission {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .mission-card {
+        width: 100%;
+        margin: 0rem auto;
+        margin-left: -0.5rem;
+        padding: 0.75rem;
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    
+    }
+    .mission-img{
+        width: 100%;
+        margin: 0rem auto;
     }
 }
 
