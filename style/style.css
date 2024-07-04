@@ -74,6 +74,7 @@ button {
     width: 174px;
     height: 48px;
     margin: 0.5rem 0rem;
+
 }
 
 .arrow {
@@ -472,6 +473,61 @@ h2 {
     max-height: 200px;
 }
 
+/* 50% discount section  */
+.discount-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-image: radial-gradient(648.07% 142.88% at 98.23% 78.35%, #020043 0%, rgba(2, 0, 67, 0.30) 50%), url("../images/Rectangle\ 32.png ");
+    background-size: cover;
+    padding: 1rem;
+    text-align: center;
+    margin: 0rem auto;
+    border-radius: 0.5rem;
+}
+.banner-logo{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+.discount-content {
+    margin: 5rem;
+}
+
+.discount-content h2 {
+    color: var(--Secondary-Color, #FFFFF5);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.discount-btn {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem auto;
+
+}
+
+.discount-btn button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--Secondary-Color, #FFFFF5);
+    background-color: transparent;
+    border: 2px solid #edeeef;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
 @media (max-width: 768px) {
     .navbar .menu {
         display: none;
@@ -594,6 +650,28 @@ h2 {
 
     .card {
         width: 100%;
+    }
+    /* 50% discount section */
+    .discount-content {
+        margin: 1rem auto;  
+    }
+    .discount-btn {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1rem auto;
+    }
+    .discount-btn button{
+        width: auto;
+    }
+    .discount-content h2 {
+        margin-top: 1rem;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 34px;
+    }
+    .banner-logo{
+        top: 0.5rem;
+        right: 0rem;
     }
 }
 
